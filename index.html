@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteBytes - Recipe Gallery</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header class="main-header">
+        <div class="logo">TasteBytes</div>
+        <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h1>Welcome to TasteBytes</h1>
+            <p>Discover delicious recipes for every occasion.</p>
+        </section>
+        <section class="controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+            <button class="filter-btn" data-filter="lunch">Lunch</button>
+            <button class="filter-btn" data-filter="dinner">Dinner</button>
+        </section>
+
+        <section class="gallery" id="recipe-gallery">
+
+            <article class="card" data-category="breakfast">
+                <div class="card-image" style="background-color: #ff9f43;">🥞</div>
+                <div class="card-content">
+                    <span class="tag">Breakfast</span>
+                    <h3>Pancakes</h3>
+                    <p>Fluffy buttermilk pancakes with syrup.</p>
+                    <button class="card-btn">View Recipe</button>
+                </div>
+            </article>
+
+            <article class="card" data-category="lunch">
+                <div class="card-image" style="background-color: #54a0ff;">🥗</div>
+                <div class="card-content">
+                    <span class="tag">Lunch</span>
+                    <h3>Caesar Salad</h3>
+                    <p>Fresh romaine lettuce with croutons.</p>
+                    <button class="card-btn">View Recipe</button>
+                </div>
+            </article>
+
+            <article class="card" data-category="dinner">
+                <div class="card-image" style="background-color: #ee5253;">🍝</div>
+                <div class="card-content">
+                    <span class="tag">Dinner</span>
+                    <h3>Spaghetti</h3>
+                    <p>Classic spaghetti bolognese.</p>
+                    <button class="card-btn">View Recipe</button>
+                </div>
+            </article>
+
+            <article class="card" data-category="breakfast">
+                <div class="card-image" style="background-color: #feca57;">🥚</div>
+                <div class="card-content">
+                    <span class="tag">Breakfast</span>
+                    <h3>Omelette</h3>
+                    <p>Cheese and vegetable omelette.</p>
+                    <button class="card-btn">View Recipe</button>
+                </div>
+            </article>
+
+            <article class="card" data-category="lunch">
+                <div class="card-image" style="background-color: #1dd1a1;">🥪</div>
+                <div class="card-content">
+                    <span class="tag">Lunch</span>
+                    <h3>Club Sandwich</h3>
+                    <p>Turkey, bacon, lettuce, and tomato.</p>
+                    <button class="card-btn">View Recipe</button>
+                </div>
+            </article>
+
+            <article class="card" data-category="dinner">
+                <div class="card-image" style="background-color: #5f27cd;">🥩</div>
+                <div class="card-content">
+                    <span class="tag">Dinner</span>
+                    <h3>Steak & Fries</h3>
+                    <p>Grilled sirloin with crispy fries.</p>
+                    <button class="card-btn">View Recipe</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TasteBytes. Built for Frontend Mini Labs.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
